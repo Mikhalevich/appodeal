@@ -1,0 +1,7 @@
+anagram
+maganar
+dog
+ogd
+god
+go
+gom
