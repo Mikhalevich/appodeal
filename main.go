@@ -40,12 +40,9 @@ func findAnagrams(fileName string) ([][]string, error) {
 
 	anagramCache := make(map[string][]string)
 
-	r := bufio.NewReader(file)
-	for {
-		l, _, err := r.ReadLine()
-		if err != nil {
-			break
-		}
+	r := bufio.NewScanner(file)
+	for r.Scan() {
+		l := r.Bytes()
 
 		key, err := sortCharsASCII(l)
 		if err != nil {
@@ -63,7 +60,7 @@ func findAnagrams(fileName string) ([][]string, error) {
 		}
 	}
 
-	return res, err
+	return res, r.Err()
 }
 
 func main() {
