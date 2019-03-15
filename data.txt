@@ -3,5 +3,17 @@ maganar
 dog
 ogd
 god
+DOG
+GOD
 go
 gom
+aba
+ab
+aAb
+BAA
+AAA
+aaaA
+aaa
+aAa
+a
+aa
